@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Turret+Road:wght@700&display=swap');
+    :root {
+        --shadow: orange;
+        --scrollbarBG: green;
+        --thumbBG: white;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: var(--scrollbarBG);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--thumbBG);
+        box-shadow: 0 -100vh 0 100vh var(--shadow), 0 0 15px 5px black;
+    }
+
+    @import url('https://fonts.googleapis.com/css?family=Raleway:200,100,400');
+
+    #loading {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #fff url(https://media.giphy.com/media/gLKwG0wnLe5zXdTnbp/giphy.gif)no-repeat center;
+        z-index: 99999;
+    }
+
+    body {
+        font-family: 'Raleway', sans-serif;
+        overflow: hidden;
+        background-size: cover;
+    }
+
+    .container {
+        background: url(https://static.vecteezy.com/system/resources/previews/000/582/542/non_2x/vector-abstract-template-black-frame-layout-metallic-red-light-on-dark-background-modern-luxury-futuristic-technology-concept.jpg)no-repeat center;
+        background-size: cover;
+    }
+
+    h1 {
+        font-weight: 200;
+        margin: 0.4rem;
+        font-family: 'Turret Road', cursive;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        color: white;
+    }
+
+    h2 {
+        font-size: 2rem;
+        color: red
+    }
+
+    /* Cursor */
+    .txt-type>.txt {
+        border-right: 0.2rem solid #fff;
+    }
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+.gutter.gutter-horizontal {
+    cursor: ew-resize;
+}
+    @media(min-width: 1200px) {
+        h1 {
+            font-size: 5rem;
+        }
+    }
+
+    @media(max-width: 800px) {
+        .container {
+            padding: 0 1rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+    }
+
+    @media(max-width: 500px) {
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
